@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ensemblejs/gulp-merge-json.git"
+    "url": "git+https://github.com/ensemblejs/gulp-merge-json-sets.git"
   },
   "keywords": [
     "gulp",
@@ -18,12 +18,12 @@
   "author": "Ryan Boucher <ryan.boucher@distributedlife.com> (http://distributedlife.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ensemblejs/gulp-merge-json/issues"
+    "url": "https://github.com/ensemblejs/gulp-merge-json-sets/issues"
   },
   "files": [
     "src/"
   ],
-  "homepage": "https://github.com/ensemblejs/gulp-merge-json#readme",
+  "homepage": "https://github.com/ensemblejs/gulp-merge-json-sets#readme",
   "devDependencies": {
     "expect": "^1.13.4",
     "gulp": "^3.9.0",
