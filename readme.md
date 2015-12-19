@@ -7,7 +7,7 @@ A plugin for Gulp to deep merge supplied files against a base set. I built this 
 First, install `gulp-merge-json-sets` as a development dependency:
 
 ```shell
-npm i gulp-mege-json -D
+npm i gulp-merge-json-sets -D
 ```
 
 Then, add it to your `gulpfile.js`:
