@@ -1,7 +1,7 @@
 {
   "name": "gulp-merge-json",
   "version": "1.0.0",
-  "description": "",
+  "description": "Using a source folder of json, it looks in a second folder, if there is a match, it merges; otherwise src file passes through ",
   "main": "src/index.js",
   "scripts": {
     "test": "mocha tests/"
@@ -15,15 +15,21 @@
     "json",
     "merge"
   ],
-  "author": "Ryan Boucher",
-  "license": "ISC",
+  "author": "Ryan Boucher <ryan.boucher@distributedlife.com> (http://distributedlife.com)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ensemblejs/gulp-merge-json/issues"
   },
+  "files": [
+    "src/"
+  ],
   "homepage": "https://github.com/ensemblejs/gulp-merge-json#readme",
   "devDependencies": {
     "expect": "^1.13.4",
     "gulp": "^3.9.0",
     "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
   }
 }
