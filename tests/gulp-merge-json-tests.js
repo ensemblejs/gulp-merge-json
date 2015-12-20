@@ -32,7 +32,7 @@ describe('merge json', function () {
       fs.writeFileSync('tmp/base/overwrite.json', JSON.stringify({from: 'base'}), 'utf8');
 
       gulp.src('tmp/in/*.json')
-        .pipe(mergeJson('../tmp/base'))
+        .pipe(mergeJson(__dirname + '/../tmp/base'))
         .pipe(gulp.dest('tmp/out/'))
         .on('end', done);
     });
@@ -76,7 +76,7 @@ describe('merge json', function () {
       fs.writeFileSync('tmp/in/supplied.json', JSON.stringify({from: 'only'}), 'utf8');
 
       gulp.src('tmp/in/*.json')
-        .pipe(mergeJson('../tmp/base'))
+        .pipe(mergeJson(__dirname + '../tmp/base'))
         .pipe(gulp.dest('tmp/out/'))
         .on('end', done);
     });

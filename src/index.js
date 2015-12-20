@@ -11,7 +11,7 @@ function mergeJson(pathToJsonFiles, logger) {
   function merge2(file, callback) {
     var filename = file.path.replace(file.base, '');
 
-    var pathToBase = path.join(__dirname, pathToJsonFiles, filename);
+    var pathToBase = path.join(pathToJsonFiles, filename);
     fs.exists(pathToBase, function (exists) {
       if (exists) {
         var local = JSON.parse(file.contents.toString());
