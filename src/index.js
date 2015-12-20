@@ -7,7 +7,7 @@ var File = gutil.File;
 var fs = require('fs');
 var through = require('through2');
 
-function mergeJson(pathToJsonFiles) {
+function mergeJson(pathToJsonFiles, logger) {
   function merge2(file, callback) {
     var filename = file.path.replace(file.base, '');
 
@@ -18,6 +18,10 @@ function mergeJson(pathToJsonFiles) {
         var base = require(pathToBase);
         var merged = merge(base, local);
 
+        if (logger) {
+          logger('Found a match, merging');
+        }
+
         callback(null, new File({
           cwd: file.cwd,
           base: file.base,
@@ -25,6 +29,10 @@ function mergeJson(pathToJsonFiles) {
           contents: new Buffer(JSON.stringify(merged))
         }));
       } else {
+        if (logger) {
+          logger('No match found, using source.');
+        }
+
         callback(null, file);
       }
     });
