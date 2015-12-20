@@ -1,6 +1,6 @@
 {
   "name": "gulp-merge-json-sets",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Using a source folder of json, it looks in a second folder, if there is a match, it merges; otherwise src file passes through ",
   "main": "src/index.js",
   "scripts": {
